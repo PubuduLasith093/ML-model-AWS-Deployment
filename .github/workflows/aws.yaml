@@ -40,7 +40,7 @@ jobs:
         cd opt/ml/model
         tar -czvf model.tar.gz .  # Package everything inside opt/ml/model
 
-    # Step 4: Upload the packaged model to Amazon S3
-    - name: Upload Model to S3
-      run: |
-        aws s3 cp opt/ml/model/model.tar.gz s3://testdepkid/model/
+      # Step 4: Upload the packaged model to Amazon S3
+      - name: Upload Model to S3
+        run: |
+          aws s3 cp opt/ml/model/model.tar.gz s3://testdepkid/model/
