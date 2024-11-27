@@ -37,7 +37,7 @@ jobs:
 
       - name: Package Model Artifact
         run: |
-          cd opt/ml/model
+          cd /opt/ml/model
           tar -czvf model.tar.gz .  # Package everything inside opt/ml/model
 
       
